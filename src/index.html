@@ -6,19 +6,15 @@
   <script>
     var frameLoad = function() {
       var chat1 = document.getElementById("chat-1");
-      var chat2 = document.getElementById("chat-2");
-
-      var channelName = "my-chat-room-" + Math.round(Math.random() * 9999);
-
+      var channelName = "my-chat-room";
       chat1.src = "/chat.html?channel=" + channelName;
-      chat2.src = "/chat.html?channel=" + channelName;
+
     };
   </script>
 </head>
 
-<frameset onload="frameLoad();" cols="50%,50%">
+<frameset onload="frameLoad();" >
  <frame id="chat-1"/>
- <frame id="chat-2"/>
 </frameset>
 
 </html>
